@@ -31,4 +31,11 @@ public class ArrayTests {
     int [] ans = {2, 4};
     assertArrayEquals(ans, ArrayExamples.reversed(input1));
   }
+
+  @Test 
+  public void aWL(){
+    double [] input1 = {4.0, 3.0, 2.0, 1.0, 1.0};
+    double ans = 3.0;
+    assertEquals(ans, ArrayExamples.averageWithoutLowest(input1), 0.0005);
+  }
 }
